@@ -49,7 +49,7 @@ const Navbar = () => {
       <nav
         className={`${
           sticky ? "fixed bg-black" : "absolute"
-        } z-50 w-full font-grotesk text-white`}
+        } z-30 w-full font-grotesk text-white `}
       >
         <Wrapper>
           <div className="flex items-center justify-between xl:px-9">
@@ -88,7 +88,7 @@ const Navbar = () => {
       {/* mobile menu */}
 
       <div
-        className={`fixed left-0 top-0 z-40 flex h-[100vh] w-full select-none flex-col items-center justify-center overflow-hidden bg-[#f3f2f4] text-center font-grotesk transition-all duration-300 ease-out ${
+        className={`fixed left-0 top-0 z-50 flex h-[100vh] w-full select-none flex-col items-center justify-center overflow-hidden bg-[#f3f2f4] text-center font-grotesk transition-all duration-300 ease-out ${
           mobileMenu ? "left-0" : "left-[-100%]"
         }`}
       >
@@ -99,7 +99,7 @@ const Navbar = () => {
           <IoClose size={32} className=" stroke-[10px]" />
         </div>
 
-        <ul className="z-30 flex flex-col gap-6">
+        <ul className="z-[70] flex flex-col gap-6">
           {menu.map((item, index) => (
             <li
               key={index}
