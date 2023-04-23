@@ -43,13 +43,10 @@ const HomeSection = () => {
             />
           </div>
 
-          <a
-            href="#market"
-            className="mx-auto my-8 flex w-[15rem] items-center justify-center rounded-full bg-mainColor py-4 text-xl font-bold text-white md:hidden"
-          >
+          <button className="mx-auto my-8 flex w-[15rem] items-center justify-center rounded-full bg-mainColor py-4 text-xl font-bold text-white md:hidden">
             See Prices
             <BiChevronDown size={25} className="ml-2 stroke-[1px]" />
-          </a>
+          </button>
 
           {loading && <Loader />}
           <div

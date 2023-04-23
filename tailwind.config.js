@@ -1,3 +1,5 @@
+// prettier-ignore
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,9 +11,9 @@ export default {
   theme: {
     extend: {},
     backgroundImage: {
-      mainColor: "linear-gradient(25deg,#2600fc,#ff00ea)",
-      heroBg: "linear-gradient(0deg,#0f051d 30%,#130749 70%)",
-      footerBg: "url('./src/assets/footer-bg.png')",
+      'mainColor': "linear-gradient(25deg,#2600fc,#ff00ea)",
+      'heroBg': "linear-gradient(0deg,#0f051d 30%,#130749 70%)",
+      'footerBg': "url('/src/assets/footer-bg.png')"
     },
     fontFamily: {
       grotesk: "Space Grotesk, sans-serif",
